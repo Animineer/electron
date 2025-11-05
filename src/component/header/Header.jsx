@@ -40,8 +40,8 @@ function Header() {
                 <ul type="none" className={styles.Headermain} style={{display:"flex",justifyContent:"space-around",alignItems:"center"}}>
                 <CiMenuBurger onClick={handleshow}/>
                 <div><IoLogoElectron className={styles.icon} /><li>Electron</li></div>
-                 <Link to="/" className="nav-link"><li>HOME</li></Link>
-                 <Link to="/product" className="nav-link"><li>PRODUCTS</li></Link>
+                 <Link to="/" className={styles.link}><li>HOME</li></Link>
+                 <Link to="/product" className={styles.link}><li>PRODUCTS</li></Link>
                  {/* <link to=""></link> */}
                 
                 
@@ -49,9 +49,9 @@ function Header() {
                  
                  <div>
                 <div></div>
-                 <Link to="/cart" className="nav-link"> <div><IoIosCart className={styles.icon} /><li>CART</li></div></Link>
+                 <Link to="/cart" className={styles.link}> <div><IoIosCart className={styles.icon} /><li>CART</li></div></Link>
                  <div><FiHeart className={styles.icon} /><li>WHISHLIST</li></div>
-                 <Link to="/login" className="nav-link"><div><FaUser className={styles.icon}/><li>LOGIN</li></div></Link>
+                 <Link to="/login" className={styles.link}><div><FaUser className={styles.icon}/><li>LOGIN</li></div></Link>
                 
                 </div>
                 </ul>
